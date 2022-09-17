@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="214" started-at="2022-08-23T18:01:49 IST" finished-at="2022-08-23T18:01:49 IST">
+  <suite name="Default suite" duration-ms="4641" started-at="2022-09-10T16:03:26 IST" finished-at="2022-09-10T16:03:31 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="214" started-at="2022-08-23T18:01:49 IST" finished-at="2022-08-23T18:01:49 IST">
-      <class name="AnnotationsJackson.JsonIncludeAnnotation">
-        <test-method status="PASS" signature="avoidDeafultvalues()[pri:0, instance:AnnotationsJackson.JsonIncludeAnnotation@396f6598]" name="avoidDeafultvalues" duration-ms="186" started-at="2022-08-23T18:01:49 IST" finished-at="2022-08-23T18:01:49 IST">
+    <test name="Default test" duration-ms="4641" started-at="2022-09-10T16:03:26 IST" finished-at="2022-09-10T16:03:31 IST">
+      <class name="RestAssuredClass.getResponseTime">
+        <test-method status="PASS" signature="getTime()[pri:0, instance:RestAssuredClass.getResponseTime@10bbd20a]" name="getTime" duration-ms="4579" started-at="2022-09-10T16:03:26 IST" finished-at="2022-09-10T16:03:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- avoidDeafultvalues -->
-      </class> <!-- AnnotationsJackson.JsonIncludeAnnotation -->
+        </test-method> <!-- getTime -->
+      </class> <!-- RestAssuredClass.getResponseTime -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

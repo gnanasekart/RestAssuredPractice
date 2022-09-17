@@ -125,6 +125,5 @@ public class CreatingJSON {
 				.assertThat()
 				.statusCode(200)
 				.log().all();
-	}
-	
+	}	
 }

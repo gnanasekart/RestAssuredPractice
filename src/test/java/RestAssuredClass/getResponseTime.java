@@ -36,10 +36,6 @@ public class getResponseTime {
 		
 		System.out.println("getBody = "+resp.getBody().asPrettyString());
 		
-		System.out.println("getHeadersDetails = "+resp.getHeaders());
-		
-		
-		
-		
+		System.out.println("getHeadersDetails = "+resp.getHeaders());	
 	}
 }

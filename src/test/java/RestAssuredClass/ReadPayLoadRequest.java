@@ -8,7 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class ReadPatloadRequest {
+public class ReadPayLoadRequest {
 
 	@Test
 	public void payLoad() {

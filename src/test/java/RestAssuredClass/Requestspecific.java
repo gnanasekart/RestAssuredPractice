@@ -63,7 +63,6 @@ public class Requestspecific {
 
 		System.out.println(resp1.asString().toString());
 
-
 		//		Response resp = request.post();
 		//		String st = resp.asString();
 		//		
@@ -72,8 +71,6 @@ public class Requestspecific {
 		//		System.out.println(resp.prettyPrint());
 		//		
 		//		ValidatableResponse vresp = resp.then().statusCode(200);
-
-
 
 		//				.accept(ContentType.JSON).accept("application/JSON")
 		//				.basePath("")
@@ -95,11 +92,5 @@ public class Requestspecific {
 		//				.that()
 		//				.when()
 		//				.with();
-
-
-
-
-
 	}
-
 }
