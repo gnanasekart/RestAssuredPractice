@@ -10,15 +10,15 @@ import io.restassured.response.Response;
 
 public class ReadPayLoadRequest {
 
-	@Test
-	public void payLoad() {
-		Response resp = RestAssured.given()
-				.baseUri("https://restful-booker.herokuapp.com/auth")
-				.contentType(ContentType.JSON)
-				.body(new File("target/userdetails.json"))
-				.when()
-				.post();
-		
-		System.out.println(resp.prettyPrint());
-	}
+    @Test
+    public void payLoad() {
+        Response resp = RestAssured.given()
+                .baseUri("https://restful-booker.herokuapp.com/auth")
+                .contentType(ContentType.JSON)
+                .body(new File("target/userdetails.json"))
+                .when()
+                .post();
+
+        System.out.println(resp.prettyPrint());
+    }
 }

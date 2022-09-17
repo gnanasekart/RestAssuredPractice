@@ -2,58 +2,58 @@ package POJOClass;
 
 public class EmployeePojo {
 
-	private String FirstName;
-	private String LastName;
-	private int Age;
-	private String Gender;
-	private double Salary;
-	private boolean Married;
-	
-	public String getLastName() {
-		return LastName;
-	}
+    private String FirstName;
+    private String LastName;
+    private int Age;
+    private String Gender;
+    private double Salary;
+    private boolean Married;
 
-	public void setLastName(String lastName) {
-		LastName = lastName;
-	}
+    public String getLastName() {
+        return LastName;
+    }
 
-	public int getAge() {
-		return Age;
-	}
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
 
-	public void setAge(int age) {
-		Age = age;
-	}
+    public int getAge() {
+        return Age;
+    }
 
-	public String getGender() {
-		return Gender;
-	}
+    public void setAge(int age) {
+        Age = age;
+    }
 
-	public void setGender(String gender) {
-		Gender = gender;
-	}
+    public String getGender() {
+        return Gender;
+    }
 
-	public double getSalary() {
-		return Salary;
-	}
+    public void setGender(String gender) {
+        Gender = gender;
+    }
 
-	public void setSalary(double salary) {
-		Salary = salary;
-	}
+    public double getSalary() {
+        return Salary;
+    }
 
-	public boolean isMarried() {
-		return Married;
-	}
+    public void setSalary(double salary) {
+        Salary = salary;
+    }
 
-	public void setMarried(boolean married) {
-		Married = married;
-	}
+    public boolean isMarried() {
+        return Married;
+    }
 
-	public String getFirstName() {
-		return FirstName;
-	}
-	
-	public void setFirstName(String FirstName) {
-		this.FirstName = FirstName;
-	}
+    public void setMarried(boolean married) {
+        Married = married;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String FirstName) {
+        this.FirstName = FirstName;
+    }
 }

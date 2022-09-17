@@ -5,59 +5,60 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class EmployeePojo {
 
-	private String FirstName;
-	private String LastName;
-	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private int Age;
-	private String Gender;
-	private double Salary;
-	private boolean Married;
-	
-	public String getLastName() {
-		return LastName;
-	}
 
-	public void setLastName(String lastName) {
-		LastName = lastName;
-	}
+    private String FirstName;
+    private String LastName;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private int Age;
+    private String Gender;
+    private double Salary;
+    private boolean Married;
 
-	public int getAge() {
-		return Age;
-	}
+    public String getLastName() {
+        return LastName;
+    }
 
-	public void setAge(int age) {
-		Age = age;
-	}
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
 
-	public String getGender() {
-		return Gender;
-	}
+    public int getAge() {
+        return Age;
+    }
 
-	public void setGender(String gender) {
-		Gender = gender;
-	}
+    public void setAge(int age) {
+        Age = age;
+    }
 
-	public double getSalary() {
-		return Salary;
-	}
+    public String getGender() {
+        return Gender;
+    }
 
-	public void setSalary(double salary) {
-		Salary = salary;
-	}
+    public void setGender(String gender) {
+        Gender = gender;
+    }
 
-	public boolean isMarried() {
-		return Married;
-	}
+    public double getSalary() {
+        return Salary;
+    }
 
-	public void setMarried(boolean married) {
-		Married = married;
-	}
+    public void setSalary(double salary) {
+        Salary = salary;
+    }
 
-	public String getFirstName() {
-		return FirstName;
-	}
-	
-	public void setFirstName(String FirstName) {
-		this.FirstName = FirstName;
-	}
+    public boolean isMarried() {
+        return Married;
+    }
+
+    public void setMarried(boolean married) {
+        Married = married;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String FirstName) {
+        this.FirstName = FirstName;
+    }
 }

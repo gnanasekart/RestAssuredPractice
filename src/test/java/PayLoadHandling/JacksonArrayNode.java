@@ -76,3 +76,4 @@ public class JacksonArrayNode {
 		System.out.println(content);		
 	}
 }
+

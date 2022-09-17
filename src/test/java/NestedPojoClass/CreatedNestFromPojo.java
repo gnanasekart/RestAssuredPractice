@@ -92,6 +92,5 @@ public class CreatedNestFromPojo {
 		File file = new File("target/nestedPojo.json");
 		file.createNewFile();
 		new ObjectMapper().writerWithDefaultPrettyPrinter().writeValue(file, empNested);
-		
 	}
 }

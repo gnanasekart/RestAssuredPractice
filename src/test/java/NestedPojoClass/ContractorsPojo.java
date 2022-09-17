@@ -31,6 +31,4 @@ public class ContractorsPojo {
 	public void setContractTo(String contractTo) {
 		this.contractTo = contractTo;
 	}
-	
-	
 }

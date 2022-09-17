@@ -8,7 +8,6 @@ import POJOClass.EmployeePojo;
 
 public class EmployeeNested {
 
-
 	private String companyName;
 	private String companyCity;
 	private String companyCEO;

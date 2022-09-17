@@ -2,6 +2,7 @@ package NestedPojoClass;
 
 public class EmployeePojo {
 
+
 	private String FirstName;
 	private String LastName;
 	private int Age;
