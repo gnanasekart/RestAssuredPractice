@@ -1,39 +1,53 @@
 {
-  "companyName" : "Ten",
-  "companyCity" : "chennai",
-  "companyCEO" : "DAN",
-  "supportedAccount" : [ "HDFC", "ICICI", "AXIS" ],
-  "pincodes" : [ 560000, 123456, 345666 ],
-  "employee" : [ {
-    "age" : 82,
-    "married" : true,
-    "lastName" : "man",
-    "firstName" : "old",
-    "gender" : "MALE",
-    "salary" : 1000.3
-  }, {
-    "age" : 2,
-    "married" : false,
-    "lastName" : "man",
-    "firstName" : "new",
-    "gender" : "MALE",
-    "salary" : 10.3
-  } ],
-  "contractors" : [ {
-    "firstname" : "marina",
-    "lastname" : "l",
-    "contractFrom" : "Nov",
-    "contractTo" : "Apl"
-  }, {
-    "firstname" : "chrinst",
-    "lastname" : "c",
-    "contractFrom" : "Nov",
-    "contractTo" : "Apl"
-  } ],
-  "companyPF" : {
-    "pFName" : "xyz",
-    "pfcity" : "BAN",
-    "pfyear" : 2022,
-    "noOfEmployees" : 100
+  "companyName": "Ten",
+  "companyCity": "chennai",
+  "companyCEO": "DAN",
+  "supportedAccount": [
+    "HDFC",
+    "ICICI",
+    "AXIS"
+  ],
+  "pincodes": [
+    560000,
+    123456,
+    345666
+  ],
+  "employee": [
+    {
+      "age": 82,
+      "married": true,
+      "lastName": "man",
+      "firstName": "old",
+      "gender": "MALE",
+      "salary": 1000.3
+    },
+    {
+      "age": 2,
+      "married": false,
+      "lastName": "man",
+      "firstName": "new",
+      "gender": "MALE",
+      "salary": 10.3
+    }
+  ],
+  "contractors": [
+    {
+      "firstname": "marina",
+      "lastname": "l",
+      "contractFrom": "Nov",
+      "contractTo": "Apl"
+    },
+    {
+      "firstname": "chrinst",
+      "lastname": "c",
+      "contractFrom": "Nov",
+      "contractTo": "Apl"
+    }
+  ],
+  "companyPF": {
+    "pFName": "xyz",
+    "pfcity": "BAN",
+    "pfyear": 2022,
+    "noOfEmployees": 100
   }
 }

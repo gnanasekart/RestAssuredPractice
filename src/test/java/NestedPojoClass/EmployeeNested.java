@@ -2,8 +2,6 @@ package NestedPojoClass;
 
 import java.util.List;
 
-import org.testng.annotations.Test;
-
 import POJOClass.EmployeePojo;
 
 public class EmployeeNested {
