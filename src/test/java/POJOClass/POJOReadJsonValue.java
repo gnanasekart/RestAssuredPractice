@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class readJsonValue {
+public class POJOReadJsonValue {
 
     @Test
     public void readjsonValues() throws JsonMappingException, JsonProcessingException {
@@ -46,23 +46,24 @@ public class readJsonValue {
         String date = String.valueOf(new Faker().date().birthday(10,20));
 
         Bookingdates bookingdates = new Bookingdates(date, date);
+//        Bookingdates bookingdates = new Bookingdates(date, date, Arrays.asList("AM", "PM"));
 
-        Booking booking = new Booking(firstname, lastname, totalprice, depositpaid, bookingdates, "lunch");
+        Booking booking = new Booking(firstname, lastname, totalprice, depositpaid, "lunch", bookingdates);
 
-        Map<Object, Object> map = new HashMap<>();
-        map.put("firstname", booking.getFirstname());
-        map.put("lastname", booking.getLastname());
-        map.put("totalprice", booking.getTotalprice());
-        map.put("depositpaid", booking.getDepositpaid());
-        map.put("bookingdates", bookingdates);
-        map.put("additionalneeds", "lunch");
+//        Map<Object, Object> map = new HashMap<>();
+//        map.put("firstname", booking.getFirstname());
+//        map.put("lastname", booking.getLastname());
+//        map.put("totalprice", booking.getTotalprice());
+//        map.put("depositpaid", booking.getDepositpaid());
+//        map.put("bookingdates", bookingdates);
+//        map.put("additionalneeds", "lunch");
 
         Response resp = RestAssured.given()
                 .baseUri("https://restful-booker.herokuapp.com/")
                 .header("Content-type", "application/json")
-                .accept(ContentType.JSON)
+                //.accept(ContentType.JSON)
                 .log().all()
-                .body(map)
+                .body(booking)
                 .post("/booking");
 
         resp.prettyPrint();
