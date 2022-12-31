@@ -1,6 +1,7 @@
 package RestAssuredClass;
 
 import POJOClass.Booking;
+import Utils.Crud;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
@@ -17,12 +18,10 @@ public class GETRequest {
 
     @Test
     public void getBookingDetails() throws IOException {
-        Response resp = RestAssured.given()
-                .baseUri("https://restful-booker.herokuapp.com/")
+        Response resp = Crud.getRequestCall()
                 .basePath("booking/{id}")
                 .pathParam("id", 344)
                 .header("Content-type","application/json")
-                .log().all()
                 .get();
         resp.prettyPrint();
 
@@ -46,6 +45,5 @@ public class GETRequest {
 
 //      write response in external file
         Files.write(Paths.get(System.getProperty("user.dir")+"/target/response.json"), resp.asByteArray());
-
     }
 }

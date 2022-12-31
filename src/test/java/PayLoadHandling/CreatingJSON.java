@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import Utils.BusinessUtils;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -31,6 +32,8 @@ public class CreatingJSON {
 				.assertThat()
 				.statusCode(200)
 				.log().all();
+
+		BusinessUtils.getId(10, 12);
 		
 	}
 
