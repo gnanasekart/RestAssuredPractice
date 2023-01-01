@@ -1,9 +1,11 @@
 package RestAssuredClass;
 
+import Report.ExtendReport;
 import Utils.ApiUtils;
 import Utils.BusinessUtils;
 import Utils.Crud;
 import Utils.FakerUtils;
+import com.aventstack.extentreports.Status;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
@@ -44,6 +46,7 @@ public class POSTCreateBooking {
 
         ApiUtils.writeStringAsResponse("responseFile", response);
 
+        ExtendReport.getTest().log(Status.PASS, response.asPrettyString());
     }
 
 
@@ -81,5 +84,7 @@ public class POSTCreateBooking {
                 .post("/booking");
 
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 }

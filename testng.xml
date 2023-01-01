@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listeners.TestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/studies and document/automation learing repo/Java repo/Java repo/RestAssuredPractice/src/test/java/RestAssuredClass">
+        <classes>
+            <class name="RestAssuredClass.GETRequest">
+                <methods>
+                    <include name="getBookingDetails" />
+                </methods>
+            </class>
+
+            <class name="RestAssuredClass.DefaultAuthRequestSpec">
+                <methods>
+                    <include name="defaultRequestSpecSet" />
+                </methods>
+            </class>
+
+            <class name="RestAssuredClass.POSTCreateBooking">
+                <methods>
+                    <include name="postCallCreateBooking" />
+                    <include name="postCallMapCreateBooking" />
+                </methods>
+            </class>
+
+            <class name="RestAssuredClass.PostRequestAuth">
+                <methods>
+                    <include name="postCall" />
+                    <include name="postCallByStringBody" />
+                    <include name="postCallByMap" />
+                    <include name="postCallByExternalFileBody" />
+                    <include name="postCallByFileStringBody" />
+                </methods>
+            </class>
+
+            <class name="RestAssuredClass.UPDATERequest">
+                <methods>
+                    <include name="updateData" />
+                </methods>
+            </class>
+
+            <class name="RestAssuredClass.WriteResponse">
+                <methods>
+                    <include name="getAuth" />
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

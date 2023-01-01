@@ -1,7 +1,11 @@
 package RestAssuredClass;
 
 import POJOClass.Booking;
+import Report.ExtendReport;
 import Utils.Crud;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.CodeLanguage;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
@@ -25,6 +29,7 @@ public class GETRequest {
                 .get();
         resp.prettyPrint();
 
+
 //        System.out.println(resp.jsonPath().getString("firstname"));
 //        System.out.println(resp.jsonPath().getString("bookingdates.checkin"));
 
@@ -45,5 +50,9 @@ public class GETRequest {
 
 //      write response in external file
         Files.write(Paths.get(System.getProperty("user.dir")+"/target/response.json"), resp.asByteArray());
+
+        //ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
+
+        ExtendReport.getTest().pass(MarkupHelper.createCodeBlock(resp.asPrettyString(), CodeLanguage.JSON));
     }
 }

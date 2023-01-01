@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+import Report.ExtendReport;
+import com.aventstack.extentreports.Status;
 import org.testng.annotations.Test;
 
 import com.google.common.io.Files;
@@ -50,6 +52,9 @@ public class WriteResponse {
         File byteArrayTarget = new File("target/token2.json");
         target.createNewFile();
         Files.write(resp.asByteArray(), byteArrayTarget);
+
+        ExtendReport.getTest().log(Status.PASS, "passed");
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
 
 //		File readFile = new File("target/token.json");
 //		byte[] ba = new byte[(int)readFile.length()];

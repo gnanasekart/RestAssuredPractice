@@ -8,14 +8,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import com.aventstack.extentreports.utils.FileUtil;
+import Report.ExtendReport;
+import com.aventstack.extentreports.Status;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class PostRequestAuth {
+public class PostRequestAuth{
 
     @Test
     public void postCall() {
@@ -39,6 +40,8 @@ public class PostRequestAuth {
         System.out.println("getHeadersDetails = " + resp.getHeaders());
         System.out.println("getHeadersDetails = " + resp.contentType());
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 
 
@@ -57,6 +60,8 @@ public class PostRequestAuth {
                 .when()
                 .post();
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 
     @Test
@@ -73,6 +78,8 @@ public class PostRequestAuth {
                 .when()
                 .post();
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 
     @Test
@@ -85,6 +92,8 @@ public class PostRequestAuth {
                 .when()
                 .post();
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 
     //getting the file and storing it as string and passing into the body
@@ -109,5 +118,7 @@ public class PostRequestAuth {
                 .when()
                 .post();
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 }

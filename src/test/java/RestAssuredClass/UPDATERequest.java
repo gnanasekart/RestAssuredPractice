@@ -1,5 +1,7 @@
 package RestAssuredClass;
 
+import Report.ExtendReport;
+import com.aventstack.extentreports.Status;
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -32,6 +34,8 @@ public class UPDATERequest {
                 .put();
 
         resp.prettyPrint();
+
+        ExtendReport.getTest().log(Status.PASS, resp.asPrettyString());
     }
 
 

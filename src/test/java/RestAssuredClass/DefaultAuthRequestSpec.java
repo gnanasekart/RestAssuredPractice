@@ -1,5 +1,7 @@
 package RestAssuredClass;
 
+import Report.ExtendReport;
+import com.aventstack.extentreports.Status;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.testng.annotations.Test;
@@ -56,5 +58,6 @@ public class DefaultAuthRequestSpec {
             System.out.println(h.getName()+" - "+h.getValue());
         }
 
+        //ExtendReport.getTest().log(Status.PASS, response.asPrettyString());
     }
 }
